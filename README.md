@@ -1,1 +1,3 @@
 # rps
+
+A simple game of rock, paper, scissors. It doesn't look very well but this was a JavaScript exercise...
