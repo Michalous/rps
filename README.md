@@ -1,3 +1,8 @@
 # rps
 
-A simple game of rock, paper, scissors. It doesn't look very well but this was a JavaScript exercise...
+A simple game of rock, paper, scissors. It now looks good too! :-)
+
+![app img](./assets/screenshot.png)
+
+lives here:
+https://michalous.github.io/rps/
