@@ -10,6 +10,8 @@ body {
 #hands {
     width: 100px;
     margin: 10px 0 40px 0;
+    animation: rotate-image 60s; 
+    animation-iteration-count: infinite;
 }
 
 .card {
@@ -103,6 +105,11 @@ h2 {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes rotate-image {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
 }
 
 .summary {
