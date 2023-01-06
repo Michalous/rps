@@ -9,10 +9,10 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Rock, Paper, Scissors</h1>
+    <img id="hands" src="./assets/rock-paper-scissors.svg" alt="">
     <div class="container">
         <div class="card">
-            <h3>Play</h3>
+            <h3>Rock, Paper, Scissors</h3>
             <label for="pick">Pick your option:</label>
             <select name="pick" id="pick">
                 <option value="rock">Rock</option>
@@ -20,15 +20,26 @@
                 <option value="scissors">Scissors</option>
             </select>
             <button class="" id="submit">Submit</button>
-            <div class="result">
-                <h5>Computer's choice:</h5>
-                <h3 id="cpu-played"></h3>
-                <h3 id="resultOfDraw"></h3>
+            <div class="result-container">
+                <div class="user-name">user</div>
+                <div class="cpu-name">cpu</div>
+            </div>
+            <div class="result-container">
+                <div class="result" id="result1"><img id="user-icon" src="" alt=""></div>
+                <h2>x</h2>
+                <div class="result" id="result2"><img id="cpu-icon" src="" alt=""></div>
+            </div>
+            <h3 id="resultOfDraw"></h3>
+            <div style="margin-bottom: 10px;">
+                stats:
+            </div>
+            <div class="result-container summary" id="summary">
+                <div class="res" id="user-sum">user: <span id="wins"></span></div>
+                <div class="res" id="draw-sum">draw: <span id="draws"></span></div>
+                <div class="res" id="cpu-sup">cpu: <span id="loses"></span></div>
             </div>
         </div>
-        <h4 id="wins"></h4>
-        <h4 id="draws"></h4>
-        <h4 id="loses"></h4>
     </div>
+    
 </body>
 </html>

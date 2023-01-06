@@ -7,12 +7,17 @@ body {
     color: rgb(200, 200, 200);
 }
 
+#hands {
+    width: 100px;
+    margin: 10px 0 40px 0;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 350px;
     height: 500px;
     background-color: rgb(30, 30, 30);
     color: rgb(200, 200, 200);
@@ -35,6 +40,8 @@ h3 {
 
 #pick {
     margin: 15px 0;
+    width: 40%;
+    font-size: 20px;
 }
 
 label {
@@ -42,15 +49,70 @@ label {
 }
 
 #submit {
-    width: 40%;
+    width: 30%;
     background-color: lightblue;
     color: navy;
     border: none;
     border-radius: 20px;
     margin: 15px 0;
-    height: 25px;
+    height: 35px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.result-container {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 54px;
 }
 
 .result {
     border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    height: 120px;
+    width: 120px;
+}
+
+.result.active {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: 2; 
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.summary {
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.summary.finished {
+    background-color: rgb(220, 220, 220);
+    color: rgb(30, 30, 30);
 }
